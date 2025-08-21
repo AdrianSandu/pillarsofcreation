@@ -1,0 +1,20 @@
+<section class="hero u-has-height-{{ heroSize }} d-flex flex-column justify-content-center align-items-center py-5">
+    <div class="container">
+
+        {% if not heroHeading %}
+            {% set heroHeading = site.heroHeading %}
+        {% endif %}
+
+        {% if not heroDescription %}
+            {% set heroDescription = site.heroDescription %}
+        {% endif %}
+
+        <div class="display-1 headline-heading{% if heroCentered %} text-center{% endif %} text-white">
+            {{ heroHeading }}
+        </div>
+        
+        <div class="display-6 headline-description{% if heroCentered %} text-center{% endif %} text-white">
+            {{ heroDescription }}
+        </div>
+    </div>
+</section>

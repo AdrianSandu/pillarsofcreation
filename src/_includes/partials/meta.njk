@@ -1,0 +1,20 @@
+<!-- Primary Meta Tags -->
+<title>{{ title }}</title>
+<meta name="title" content="{{ title }}">
+<meta name="description" content="{% if metaDescription %}{{ metaDescription }}{% else %}{{ site.description }}{% endif %}">
+<meta name="author" content="{{ site.author }}">
+<meta name="generator" content="{{ eleventy.generator }}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.baseURL }}{{ page.url }}">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{% if metaDescription %}{{ metaDescription }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:image" content="{{ site.baseURL }}{% if metaCard %}{{ metaCard }}{% else %}{{ site.card }}{% endif %}">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ site.baseURL }}{{ page.url }}">
+<meta property="twitter:title" content="{{ title }}">
+<meta property="twitter:description" content="{% if metaDescription %}{{ metaDescription }}{% else %}{{ site.description }}{% endif %}">
+<meta property="twitter:image" content="{{ site.baseURL }}{% if metaCard %}{{ metaCard }}{% else %}{{ site.card }}{% endif %}">

@@ -1,0 +1,29 @@
+---
+layout:                 layouts/base.njk
+heroSize:               50
+heroCentered:           true
+---
+
+{% include "partials/hero.njk" %}
+
+<section class="py-5">
+    <div class="container">
+
+        <div class="">
+            {% if issueBanner %}
+                <img src="{{ issueBanner }}" class="img-fluid mb-5" alt="{{ title }}" />
+            {% endif %}
+
+            {% if title %}
+                <h1 class="mb-5">
+                    {{ title }}
+                </h1>
+            {% endif %}
+        </div>
+
+        {{ content | safe }}
+
+    </div>
+</section>
+
+{% include "partials/chapters.njk" %}

@@ -1,0 +1,51 @@
+:root {
+    --min-height-25: 25vh;
+    --min-height-50: 50vh;
+    --min-height-75: 75vh;
+    --min-height-100: 100vh;
+    --bs-link-color: #a53f17;
+    --bs-link-hover-color: #083a42;
+}
+
+.nav-pills {
+    --bs-nav-pills-link-active-bg: #a53f17;
+}
+
+body,
+html {
+    font-size: 1.125rem;
+}
+
+body {
+    padding-top: 60px;
+}
+
+.u-has-height-25 {
+    min-height: var(--min-height-25);
+}
+
+.u-has-height-50 {
+    min-height: var(--min-height-50);
+}
+
+.u-has-height-75 {
+    min-height: var(--min-height-75);
+}
+
+.u-has-height-100 {
+    min-height: var(--min-height-100);
+}
+
+.bg-gray {
+    background-color: #6c757d;
+}
+
+.hero {
+    background-color: #1B376C;
+}
+
+@media (min-width: 576px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 80ch;
+    }
+}

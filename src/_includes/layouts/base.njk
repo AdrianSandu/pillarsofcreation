@@ -1,0 +1,29 @@
+  
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	{% include "partials/meta.njk" %}
+
+	<link rel="icon" href="/favicon.ico" sizes="32x32">
+	<link rel="icon" href="/favicon.png" type="image/png">
+
+	<!-- CSS only -->
+	<link href="/css/bootstrap-5-3-7.min.css" rel="stylesheet">
+	<link href="/css/styles.css" rel="stylesheet">
+
+</head>
+<body class="d-flex flex-column h-100{% if bodyClass %} {{ bodyClass }}{% endif %}">
+
+	{% include "partials/nav.njk" %}
+
+	{{ content | safe }}
+
+	{% include "partials/footer.njk" %}
+
+	<!-- JavaScript Bundle with Popper -->
+	<script src="/js/bootstrap-5-3-7.bundle.min.js"></script>
+</body>
+</html>

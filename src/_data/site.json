@@ -1,0 +1,23 @@
+{
+    "author": "Adrian Sandu",
+    "description": "The Pillars of Creation is a personal take on several ways developers can create content, build communities, and bring value",
+    "heroHeading": "The Pillars of Creation",
+    "heroDescription": "How developers can create content, build communities, and bring value",
+    "card": "/img/meta-card.png",
+    "baseURL": "https://frontendnexus.com",
+    "chapters": {
+        "0": "Intro",
+        "1": "The advantages of creating content",
+        "2": "Laying down the foundation: the personal website",
+        "3": "First pillar: Writing",
+        "4": "Second pillar: Audio",
+        "5": "Third pillar: Images, graphics, and illustrations",
+        "6": "Fourth pillar: Video",
+        "7": "Fifth pillar: Code",
+        "8": "Sixth pillar: Public speaking",
+        "9": "Seventh pillar: Communities",
+        "10": "Generating Content using AI",
+        "11": "Combining Mediums and Repurposing Content",
+        "12": "Wrapping things up"
+    }
+}

@@ -1,0 +1,35 @@
+---
+layout:                 layouts/base.njk
+bodyClass:              homepage
+title:                  "The Pillars of Creation - how developers can create content, build communities, and bring value"
+heroSize:               50
+heroCentered:           true
+heroHeading:            "The Pillars of Creation"
+heroDescription:        "How developers can create content, build communities, and bring value"
+chapter:                0
+---
+
+{% include "partials/hero.njk" %}
+
+<section class="py-5">
+    <div class="container">
+        <h1>
+            {% for part, chapterTitle in site.chapters %}
+                {% if chapter == loop.index - 1 %}
+                    {{ chapterTitle }}
+                {% endif %}
+            {% endfor %}
+        </h1>
+{% markdown %}
+The web industry is in flux. Phrases like "job security" and "we're all like a family here" have often turned out to be empty promises. With recent waves of tech layoffs, shifting industry demands, and the looming threat of AI taking over their jobs, many developers are questioning the stability of their careers. According to the [Crunchbase Tech Layoffs Tracker](https://news.crunchbase.com/startups/tech-layoffs/), nearly 200.000 people employed by for US-based tech companies were laid off in 2023 and nearly 100.000 more in 2024.
+
+So, what can developers do to secure their positions? How can they increase their chances of finding their next job? How can they attract their next client? The answer is clear: They must enhance their visibility, professional authority, and reputation.
+
+Creating content is a proven method for achieving these goals organically and sustainably. Unlike certifications or networking events, which may have limited windows of effectiveness, content creation fosters a lasting presence. Blogs, podcasts, and videos remain accessible indefinitely, showcasing your expertise and allowing your reputation to grow passively over time. Numerous developers have built their names by consistently sharing their knowledge with audiences worldwide.
+
+This article explores the benefits of content creation and strategies for enhancing your online presence. Although it primarily focuses on the web development industry, the insights offered are still relevant to a broader audience. We will also examine seven aspects of content creation, each characterized by a unique mode of expression. By the end of this guide, you’ll have actionable strategies to produce impactful content and cultivate meaningful connections. Whether you're just starting or aiming to elevate your presence, this guide will assist you in taking the next step.
+{% endmarkdown %}
+    </div>
+</section>
+
+{% include "partials/chapters.njk" %}
