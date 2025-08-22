@@ -4,7 +4,7 @@
     "heroHeading": "The Pillars of Creation",
     "heroDescription": "How developers can create content, build communities, and bring value",
     "card": "/img/meta-card.png",
-    "baseURL": "https://frontendnexus.com",
+    "baseURL": "https://pillarsofcreation.dev",
     "chapters": {
         "0": "Intro",
         "1": "The advantages of creating content",
